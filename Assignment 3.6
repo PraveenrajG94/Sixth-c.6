@@ -1,0 +1,53 @@
+1. overload a method with the same return type.
+
+
+   yes,we can overload a method with same return by creating two methods in 
+   same name and return type should be in string  
+
+
+    import java.util.Scanner;
+    public class acad {
+  	public static String string(String x, String y)
+    {
+		String s=x+" "+y;
+		return s;
+    }
+    public static String string(String z)  
+    {
+    	String s1=z;
+         return z;
+    }
+	
+	  public static void main(String args[])
+	  {
+		Scanner sc= new Scanner(System.in);
+		
+		String x = sc.nextLine();
+		String y= sc.nextLine();
+		String z="praveen";
+		System.out.println("String");
+		System.out.println(string(x,y)); //2 String as input
+		System.out.println(string(z));   //1 String as input
+		}
+	  }
+2.  The element sorted in a
+descending order.
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+
+public class acad {
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+int n=s.nextInt(); //size of array
+int[] x=new int[n]; // declaration of array
+for(int i=0;i<n;i++){
+a[i]=s.nextInt();
+}
+Arrays.sort(x);               //sorting of array
+for(int i=x.length-1;i>=0;i--){
+System.out.println(x[i]+" "); // displaying sorted reverse ordered array elements
+}
+}
+}
